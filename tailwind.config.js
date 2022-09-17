@@ -12,6 +12,7 @@ module.exports = {
       fontFamily: {
         primary: ["Montserrat"],
       },
+      backgroundImage: {},
     },
   },
   plugins: [],
