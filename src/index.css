@@ -9,7 +9,7 @@ body{
     /* overflow-block: hidden; */
 }
 .head_bg{
-    background-image: url('/public/asset/images/header_bg.png');
+    background-image: url('/public/asset/images/header.png');
 }
 p{
     line-height: 32px;
