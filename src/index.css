@@ -2,3 +2,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    font-family: 'Montserrat';
+    /* overflow-x: hidden; */
+    /* overflow-block: hidden; */
+}
+.head_bg{
+    background-image: url('/public/asset/images/header_bg.png');
+}
+p{
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 24px;
+}
+.card{
+    background: #122069;
+    box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 32px 0px;
+}
