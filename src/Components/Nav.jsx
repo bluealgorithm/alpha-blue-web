@@ -21,7 +21,7 @@ const Nav = () => {
                 <img src={twitter} alt="twitter_icon" className='mx-[16px] h-[24px] w-[24px]' />
                 <img src={linkedin} alt="linkedin_icon" className='h-[24px] w-[24px]' />
           </div> 
-      <div className="py-3 md:px-8 bg-white max-h-[104px] w-full mb-1 md:flex md:items-center md:justify-between text-2xl px-[80px]">
+      <div className="py-3 md:px-8 bg-white max-h-[104px] w-full mb-1 md:flex md:items-center md:justify-between text-2xl">
         <div className="flex justify-between items-center">
           <Link className="text-xl hover:text-text_primary duration-500" to="/">
     <img
