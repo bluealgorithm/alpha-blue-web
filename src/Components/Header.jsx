@@ -2,7 +2,8 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <div className='h-screen head_bg'>
+    </div>
   )
 }
 
