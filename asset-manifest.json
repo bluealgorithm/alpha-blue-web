@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/alpha-blue-web/static/css/main.c2c16475.css",
-    "main.js": "/alpha-blue-web/static/js/main.046670ae.js",
+    "main.css": "/alpha-blue-web/static/css/main.c37c892f.css",
+    "main.js": "/alpha-blue-web/static/js/main.822fd819.js",
     "static/media/contact_bnr.png": "/alpha-blue-web/static/media/contact_bnr.7d2e8e24e2cfdf645618.png",
     "static/media/header.png": "/alpha-blue-web/static/media/header.18ac2e8e5c22e6e33512.png",
     "static/media/mision_bnr.png": "/alpha-blue-web/static/media/mision_bnr.a48d89186ce89fbe9172.png",
@@ -11,11 +11,11 @@
     "static/media/scaleup.png": "/alpha-blue-web/static/media/scaleup.1a8b345c2346f903e679.png",
     "static/media/difference_kcca.png": "/alpha-blue-web/static/media/difference_kcca.2050d47a0986c85c2812.png",
     "index.html": "/alpha-blue-web/index.html",
-    "main.c2c16475.css.map": "/alpha-blue-web/static/css/main.c2c16475.css.map",
-    "main.046670ae.js.map": "/alpha-blue-web/static/js/main.046670ae.js.map"
+    "main.c37c892f.css.map": "/alpha-blue-web/static/css/main.c37c892f.css.map",
+    "main.822fd819.js.map": "/alpha-blue-web/static/js/main.822fd819.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2c16475.css",
-    "static/js/main.046670ae.js"
+    "static/css/main.c37c892f.css",
+    "static/js/main.822fd819.js"
   ]
 }
