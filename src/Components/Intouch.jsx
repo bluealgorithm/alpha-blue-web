@@ -1,15 +1,18 @@
 import React, {useState, useRef} from 'react'
-import contact_brn from '../asset/images/contact_bnr.png'
+import logo from '../asset/images/logo.png'
+import twitter_icon from '../asset/images/twitter-icon.png'
+import call_icon from '../asset/images/call-icon.png'
+import mail_icon from '../asset/images/mail-icon.png'
 import { Link } from 'react-router-dom'
 import FadeIn from './Animation/FadeIn'
 import FadeLeft from './Animation/FadeLeft'
-// import emailjs from '@emailjs/browser';
 import emailjs from 'emailjs-com'
 const isValidEmail = email => {
     const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return regex.test(String(email).toLowerCase());
 };
-const Contact = () => {
+const Intouch = ({...props}) => {
+  const {title, text, link, btn_txt, full, contact_title, contact_text, form_title, form_text} = props
   const [fname, setFName] = useState('');
   const [lname, setLName] = useState('');
     const [email, setEmail] = useState('');
@@ -48,18 +51,31 @@ const Contact = () => {
 }
   return (
     <>
-    <section className='h-auto md:h-[1748px] bg-primary_blue-100 overflow-hidden'>
-        <div className="contact h-full md:h-[1260px] block md:flex mt-[56px] md:relative">
-          <FadeIn delay={1000}>
-            <img src={contact_brn} alt="contact_bnr" className='hidden md:block md:absolute left-0 top-[56px]' />
-          </FadeIn>
-          <FadeLeft delay={1200}>
-        <aside className='w-5/6 mx-auto md:mx-0 md:w-[670px] md:h-[1260px] bg-white md:absolute md:left-[700px] md:top-[56px] py-[20px]'>
-          <div className="md:w-[553px] w-full text-center">
-            <h3 className='mb-[24px] mt-[36px] font-[600] text-[20px] md:text-[40px]'>CONTACT US</h3>
-            <p className='mx-[10px] md:mx-0'>Have any inquiries and want to reach out to us? Fill out the form below and drop us a message.</p>
+      <FadeLeft>
+      <header className={`${full ? 'md:h-screen h-[70vh]' : 'md:max-h-[653px] max-h-[50vh]'} max-w-full md:max-w-screen head_bg`}>
+      <article className='flex flex-col items-center justify-center w-full h-full text-white'>
+          <p className='font-[600] text-[20px] md:text-[40px] leading-10' >{title}</p>
+          <p className='px-[50px] md:px-[448px] mt-[16px] mb-[40px] text-center'>{ text }</p>
+            <Link to={`/${link}`}>
+        <button className="bg-primary_blue-100 md:min-w-[200px] md:h-[56px] hover:bg-primary_blue-200 text-white duration-500 px-[16px] py-[12px]  rounded text-[20px] md:text-[24px] font-[600]"
+              >{btn_txt}</button>
+              </Link>
+      </article>
+        </header>
+        </FadeLeft>
+      <section className='bg-primary_blue-100 h-full overflow-hidden'>
+        <div className="md:w-[1002px] w-6/7 md:px-[75px] mx-auto w-full text-white">
+                <h3 className='mb-[24px] mt-[56px] font-[600] text-[20px] md:text-[40px] text-center'>{ contact_title}</h3>
+                <p className='md:text-[24px] font-[500] text-center'>{ contact_text}</p>
           </div>
-          <div className="form mt-[32px] px-[20px] md:px-[80px]">
+        <div className="contact h-full md:h-[1227px] mt-[56px] mb-[40px]">
+          <FadeLeft delay={1200}>
+        <aside className='w-5/6 mx-auto md:w-[670px] min-h-[1000px] md:h-[1260px] pt-[56px] bg-white'>
+          <div className="md:w-[553px] w-6/7  mx-auto w-full text-center">
+                <p className='mb-[8px] font-[500] text-[17px] md:text-[24px]'>{ form_title}</p>
+                <p className='text-[16px] font-[400]'>{ form_text}</p>
+          </div>
+          <div className="form mt-[32px] px-[20px] h-[421px] md:px-[80px]">
             <form  ref={form} onSubmit={sendEmail}>
               <div className="form-inp">
                 <label htmlFor="fname" className='font-[400] text-[20px] md:text-[24px]'>First Name</label>
@@ -93,6 +109,17 @@ const Contact = () => {
           </FadeLeft>
           
         </div>
+        <section className=' flex flex-col items-center  bg-white pb-[40px]'>
+                  <img src={logo} alt="alpha blue logo" className='mt-[56px] mb-[24px]' />
+                  <h2 className='mb-[8px] font-[600] text-[20px] md:text-[40px]'>Need To Talk Now?</h2>
+                  <p className='text-[16px]'>Do you want to support our initiatives? </p>
+                  <div className="icon flex justify-between items-center w-4/6 md:w-[380px] mt-[48px] mb-[40px]">
+                      <img src={call_icon} alt="" />
+                      <img src={twitter_icon} alt="" />
+                      <img src={mail_icon} alt="" />
+                  </div>
+                  <button className='bg-primary_blue-100 hover:bg-primary_blue-200 text-white py-[12px] px-[16px] w-[168px] rounded'>Donate</button>
+        </section>
       <footer className='pt-[56px] px-[20px] md:px-[80px] text-white text-center md:text-left'>
         <div className="block md:flex md:justify-between">
           <div className="info md:max-w-[455px] mb-[15px] md:mb-0 mt-[56px]">
@@ -128,14 +155,15 @@ const Contact = () => {
           </div>
         </div>
        
-      </footer>
-      </section>
-      <div className='w-full' style={{border: "0.2px solid #7D7B7B"}}></div>
-     <div className="copy md:h-[80px] bg-primary_blue-100 px-[15px] md:px-[80px] py-[10px] border-white text-center text-white">
+        </footer>
+        <div className='w-full' style={{border: "0.2px solid #7D7B7B"}}></div>
+        <div className="copy md:h-[80px] bg-primary_blue-100 px-[15px] md:px-[80px] py-[10px] border-white text-center text-white">
           <p className='font-[400] text-[16px] mt-[16px]'>Copyright ©2022 All rights reserved | Alpha Blue Foundation  Powered by Blue Algorithm Technologies Ltd</p>
         </div>
+    </section>
+     
     </>
   )
 }
 
-export default Contact
+export default Intouch

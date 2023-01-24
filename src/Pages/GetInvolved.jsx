@@ -13,7 +13,7 @@ import scaleup from '../asset/images/scaleup.png'
 import state from '../asset/images/state.png'
 import FadeIn from '../Components/Animation/FadeIn'
 import FadeLeft from '../Components/Animation/FadeLeft'
-const Home = () => {
+const GetInvolved = () => {
   
 // const [offsetY, setOffsetY] = useState(0)
 // const handleScroll = () => setOffsetY(window.pageYOffset)
@@ -31,18 +31,10 @@ const Home = () => {
             <FadeLeft>
               <Nav />
             </FadeLeft>
-          <Header title='Promoting sustainable human capital development in Africa through technology' btn_txt='Get Involved' link='get-involved' />
-          <FadeIn><About /></FadeIn>
-          <FadeLeft>
-              <Mission_Vision title='OUR MISSION' content='Our mission is to empower Africans with digital tech skills that will promote a technologically thriving African society.' img={vision} /></FadeLeft>
+          <Header title='GET INVOLVED' content='Promoting sustainable human capital development in Africa through technology
+' btn_txt='Contact Us' link='get-in-touch' />
           <FadeIn>
-              <Mission_Vision title='OUR VISION' content='We envision an African society that is technologically developed, where poverty is at its minimal level and sustainable development, financial freedom, and economic prosperity.' img={mision_bnr} second />
-            </FadeIn>
-          <FadeLeft>
-              <Difference title='WE ARE MAKING A DIFFERENCE' text1='370 KCCA PARTICIPANTS' text2='SCALE UP AFRICA PARTICIPANTS' text3='1 STATE REACHED' img1={kcca} img2={scaleup} img3={state} />
-          </FadeLeft>
-          <FadeIn>
-              <Partners />
+              <Difference title='HOW TO GET INVOLVED' text1='Become a partner' text2='Become a volunteer' text3='Donate' img1={kcca} img2={scaleup} img3={state} />
           </FadeIn>
           <FadeLeft>
               <Contact />
@@ -51,4 +43,4 @@ const Home = () => {
       )
 }
 
-export default Home
+export default GetInvolved

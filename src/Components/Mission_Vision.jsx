@@ -1,22 +1,27 @@
-import React from 'react'
-import vision from '../asset/images/vision.png'
-import mision_bnr from '../asset/images/mision_bnr.png'
-const Mission_Vision = () => {
+import React, {useState, useEffect} from 'react'
+
+const Mission_Vision = ({ title, content, img, first, second, about }) => {
+  const [offsetY, setOffsetY] = useState(0)
+  const handleScroll = () => setOffsetY(window.pageYOffset)
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+  
+
   return (
-    <div className='md:h-[930px]'>
-      <div className="mision mt-[50px] md:flex items-center justify-around gap-[24px]">
-        <article className='ml-[80px]'>
-          <h3 className='font-[600] text-[40px] mb-[24px]'>OUR MISSION</h3>
-          <p className='font-[400] text-[24px]'>Our mission is to empower Africans with digital tech skills that will promote a technologically thriving African society.</p>
+    <div className={`${second != about ? 'pt-[20px] md:pt-0' : 'pt-[50px]'} ${first && 'pt-0'}`}>
+      <div className={`${second ? 'flex-col-reverse flex md:flex-row-reverse' : 'flex-col-reverse flex md:flex-row' } md:flex md:items-center md:justify-around md:gap-[24px] my-0 w-5/6 mx-auto md:mx-0 md:w-full`}>
+        <article className={`${second ? 'md:mr-[81px] text-center md:text-right' : 'text-center md:text-left md:ml-[80px]'}`}>
+          <h3 className='font-[600] text-[30px] md:text-[40px] mb-[24px]'>{title}</h3>
+          <p className='font-[400] text-[24px] mb-[20px] md:mb-0'>{content }</p>
         </article>
-          <img src={mision_bnr} alt="" className='mr-[72px] max-w-[600px]' />
-      </div>
-      <div className="mision md:flex items-center justify-around gap-[24px]">
-          <img src={vision} alt="" className='ml-[70px] max-w-[600px]' />
-        <article className='mr-[81px] text-right'>
-          <h3 className='font-[600] text-[40px] mb-[24px]'>OUR VISION</h3>
-          <p className='font-[400] text-[24px]'>We envision an African society that is technologically developed, where poverty is at its minimal level and sustainable development, financial freedom, and economic prosperity.</p>
-        </article>
+        <img src={img} alt="" className={`${second ? 'md:ml-[70px]': 'md:mr-[72px]'} max-w-6/7 mx-auto md:mx-0 md:max-w-[600px]`} />
       </div>
     </div>
   )

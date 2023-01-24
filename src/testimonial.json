@@ -1,0 +1,40 @@
+
+[
+    {
+        "id": 1,
+        "img":"https://img.freepik.com/free-photo/success-triumph-joy-happiness-concept-adorable-cute-excited-little-afro-american-boy-having-overjoyed-ecstatic-facial-expression-smiling-clenching-fists-receiving-good-positive-news_343059-2226.jpg?w=2000",
+        "name":"Kelechi Afor",
+        "testimony":"KCCA gave me the foundational knowledge i needed to start my career in tech."
+    },
+    {
+        "id": 2,
+        "img":"https://img.freepik.com/free-photo/success-triumph-joy-happiness-concept-adorable-cute-excited-little-afro-american-boy-having-overjoyed-ecstatic-facial-expression-smiling-clenching-fists-receiving-good-positive-news_343059-2226.jpg?w=2000",
+        "name":"Yinka Ayefele",
+        "testimony":"my gave me the foundational knowledge i needed to start my career in tech."
+    },
+     {
+        "id": 3,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM9TdXH-6qc5f07FJYedQnxX0ix6qL6eiUATlXxqlTFxLnAiOrlwIinVf8ip-Cne97PIY&usqp=CAU",
+        "name":"Gbadebo Afor",
+        "testimony":"KCCA gave me the foundational knowledge i needed to start my career in tech."
+    },
+    {
+        "id": 4,
+        "img":"https://mythemeshop.com/wp-content/themes/mts19/images/testimonials/Ryan-360x290.jpg",
+        "name":"Yankay Afor",
+        "testimony":"KCCA gave me the foundational knowledge i needed to start my career in tech."
+    },
+    {
+        "id": 5,
+         "img":"https://img.freepik.com/free-photo/success-triumph-joy-happiness-concept-adorable-cute-excited-little-afro-american-boy-having-overjoyed-ecstatic-facial-expression-smiling-clenching-fists-receiving-good-positive-news_343059-2226.jpg?w=2000",
+        "name":"Sebotimo Jude",
+        "testimony":"KCCA gave me the foundational knowledge i needed to start my career in tech."
+    },
+ {
+        "id": 6,
+        "img":"https://mythemeshop.com/wp-content/themes/mts19/images/testimonials/Ryan-360x290.jpg",
+        "name":"Enugbe Monidiowo",
+        "testimony":"KCCA gave me the foundational knowledge i needed to start my career in tech."
+    }
+
+]
