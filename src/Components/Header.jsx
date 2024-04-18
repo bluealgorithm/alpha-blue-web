@@ -1,39 +1,45 @@
-import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
-import {useTransition, animated} from 'react-spring'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import ChevronLeft from "../asset/icons/chevron-left";
+import ChevronRight from "../asset/icons/chevron-right";
+import { register } from "swiper/element/bundle";
 
-const Header = ({ home, title, content, btn_txt, link, about, img_height }) => {
-  let size = window.innerWidth
-    const [isVisible, setIsVisible] = useState(true)
-    const transition = useTransition(isVisible, {
-    from: { x:-100, y: 600, opacity: 0, width: 10, height: 10 },
-    // enter: {x:0, y: 0, opacity: 1 },
-      enter: item => async (next) => {
-        await next({ y: 0, opacity: 1 })
-        await next({x: 0, width: size, height: 621})
-    },
-    leave: {x: 100, y: 600, opacity: 0 },
-    reverse: isVisible,
-    delay: 200,
-    // config: config.molasses,
-      onRest: () => setIsVisible(isVisible),
-    // 621
-    })
-  return transition(
-    (styles, item) => item &&
-      <animated.div className='md:h-[621px] max-w-screen md:max-w-screen max-h-[50vh] md:max-h-screen head_bg' style={styles}>
-        <article className='flex flex-col items-center justify-center w-full h-full text-white text-center'>
-          <p className='md:min-w-[658px] text-[20px] md:text-[40px] font-[600] leading-20 md:leading-10'>{title}</p>
-          {content &&
-              <p className='md:w-[545px] text-[16px] md:text-[24px] font-[400] leading-20 md:leading-10 mt-[18px]'>{content}</p>
-          }
-          <Link to={`/${link}`}>
-        <button className="bg-primary_blue-100 md:w-[200px] md:h-[56px] hover:bg-primary_blue-200 text-white duration-500 px-[16px] py-[12px]  rounded text-[20px] md:text-[24px] font-[600] mt-[40px]"
-            >{btn_txt}</button>
-            </Link>
-      </article>
-    </animated.div>
-  )
-}
+register();
 
-export default Header
+const Header = () => {
+  return (
+    <swiper-container loop="true" autoplay-delay="5000">
+      {[0, 1, 2, 3, 4].map((i) => (
+        <swiper-slide>
+          <div className="flex items-center head_bg justify-center w-[calc(100vw-120px)] px-5 mx-auto rounded-xl mb-5 mt-6 h-[calc(100vh-80px)] text-white text-center">
+            <button
+              onClick={() => 1}
+              className="flex items-center justify-center text-white bg-black/50 rounded-full p-4"
+            >
+              <ChevronLeft />
+            </button>
+            <div className="w-full px-10 flex flex-col items-start">
+              <h1 className="text-5xl leading-tight font-bold mb-10 text-left">
+                Promoting sustainable human capital development in Africa
+                through technology
+              </h1>
+
+              <Link
+                to="get-in-touch"
+                className="px-10 py-4 font-semibold text-xl hover:bg-primary_blue-200 bg-primary_blue-100 text-white duration-500"
+              >
+                Get involved
+              </Link>
+            </div>
+
+            <button className="flex items-center justify-center text-white bg-black/50 rounded-full p-4">
+              <ChevronRight />
+            </button>
+          </div>
+        </swiper-slide>
+      ))}
+    </swiper-container>
+  );
+};
+
+export default Header;
