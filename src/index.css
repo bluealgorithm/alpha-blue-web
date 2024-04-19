@@ -19,13 +19,6 @@ li {
   background-size: cover;
 }
 
-.vision_bg {
-  background-image: url("/public/asset/images/vision.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .card {
   background: #122069;
   box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.16);
