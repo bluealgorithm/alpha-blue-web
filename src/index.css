@@ -14,10 +14,16 @@ li {
 }
 
 .head_bg {
-  background-color: #fff;
   background-image: url("/public/asset/images/header.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.vision_bg {
+  background-image: url("/public/asset/images/vision.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card {
@@ -28,22 +34,4 @@ li {
 
 ul {
   list-style: circle;
-}
-
-@media screen and (max-width: 760px) {
-  html,
-  body {
-    font-family: "Montserrat";
-    overflow-x: hidden;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* overflow-block: hidden; */
-  }
-  p {
-    line-height: 30px;
-    font-weight: 400;
-    font-size: 18px;
-    text-align: center;
-  }
 }
