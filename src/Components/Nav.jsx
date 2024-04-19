@@ -35,7 +35,7 @@ const Nav = () => {
   };
   return (
     <nav>
-      <div className="top flex justify-end h-[56px] items-center font-primary bg-primary_blue-100 pr-[60px]">
+      {/* <div className="top flex justify-end h-[56px] items-center font-primary bg-primary_blue-100 pr-[60px]">
         <img src={facebook} alt="facebook_icon" className="h-[24px] w-[24px]" />
         <img
           src={twitter}
@@ -43,7 +43,7 @@ const Nav = () => {
           className="mx-[16px] h-[24px] w-[24px]"
         />
         <img src={linkedin} alt="linkedin_icon" className="h-[24px] w-[24px]" />
-      </div>
+      </div> */}
       <div className="py-3 md:px-[60px] px-[18px] bg-white max-h-[104px] w-screen mb-1 md:flex md:items-center md:justify-between">
         <div className="flex justify-between items-center">
           <Link className="hover:text-text_primary duration-500" to="/">
@@ -112,16 +112,6 @@ const Nav = () => {
                 </Link>
               </li>
             </ul>
-          </li>
-          <li className="md:mr-[27px] my-3 md:my-0">
-            <Link className="hover:text-text_primary duration-500" to="#">
-              Magazine
-            </Link>
-          </li>
-          <li className="md:mr-[27px] my-3 md:my-0">
-            <Link className="hover:text-text_primary duration-500" to="#">
-              Award
-            </Link>
           </li>
           <li
             className="md: mr-[30px] my-3 md:my-0 relative "

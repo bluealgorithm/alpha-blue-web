@@ -29,7 +29,6 @@ const Home = () => {
       <FadeIn>
         <About />
       </FadeIn>
-      <Mission />
       <Vision />
       {/* <FadeLeft>
         <Mission_Vision
@@ -46,9 +45,10 @@ const Home = () => {
           second
         />
       </FadeIn> */}
-      <FadeLeft>
+      {/* <FadeLeft>
         <Difference />
-      </FadeLeft>
+      </FadeLeft> */}
+      <Mission />
       <FadeIn>
         <Partners />
       </FadeIn>
