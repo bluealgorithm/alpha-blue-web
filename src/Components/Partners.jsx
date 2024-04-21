@@ -35,19 +35,47 @@ const Partners = () => {
   return (
     <div className="h-[260px] md:h-[360px] mt-10">
       <h1 className="font-[600] text-[30px] md:text-[40px] text-center">
-        PARTNERS
+        Our Partners
       </h1>
-      <div className="flex items-center space-x-16 mt-5 justify-center">
-        {partners.map((partner) => (
-          <img
-            src={partner.logo}
-            key={partner.name}
-            title={partner.name}
-            alt={partner.name}
-            className="h-20 hover:grayscale-0 grayscale cursor-pointer"
-          />
-        ))}
-      </div>
+
+      {/* <div className="flex relative overflow-x-hidden">
+        <div className="flex items-centerwhitespace-nowrap marquee space-x-16 mt-5 justify-center">
+          {partners.map((partner) => (
+            <img
+              src={partner.logo}
+              key={partner.name}
+              title={partner.name}
+              alt={partner.name}
+              className="h-20 hover:grayscale-0 grayscale cursor-pointer"
+            />
+          ))}
+        </div>
+
+        <div className="flex items-center whitespace-nowrap marquee2 space-x-16 mt-5 justify-center">
+          {partners.map((partner) => (
+            <img
+              src={partner.logo}
+              key={partner.name}
+              title={partner.name}
+              alt={partner.name}
+              className="h-20 hover:grayscale-0 grayscale cursor-pointer"
+            />
+          ))}
+        </div>
+      </div> */}
+      <marquee behavior="scroll" direction="left" scrollamount="5">
+        <div className="flex flex-wrap space-x-14 mx-auto py-12">
+          {partners.map((partner) => (
+            <img
+              src={partner.logo}
+              key={partner.name}
+              title={partner.name}
+              alt={partner.name}
+              className="h-20 hover:grayscale-0 grayscale cursor-pointer"
+            />
+          ))}
+        </div>
+      </marquee>
     </div>
   );
 };

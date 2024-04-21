@@ -22,7 +22,7 @@ export default function Mission() {
   ];
 
   return (
-    <div className="h-[70vh] mt-12 flex flex-col justify-center items-center mx-auto bg-gradient-to-r from-primary_blue-200 to-primary_blue-100">
+    <div className="min-h-[70vh] px-8 py-10 mt-12 flex flex-col justify-center items-center mx-auto bg-gradient-to-r from-primary_blue-200 to-primary_blue-100">
       <div className="max-w-5xl">
         <p className="text-3xl font-bold text-white leading-normal">
           We are on a mission to empower Africans with technological and

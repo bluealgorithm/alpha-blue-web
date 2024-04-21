@@ -7,7 +7,7 @@ export default function Vision() {
     <div
       className={`min-h-[60vh] container bg-cover bg-center bg-no-repeat bg-[url("/public/asset/images/vision.jpg")] mx-auto rounded-3xl`}
     >
-      <div className="h-full bg-gradient-to-r from-primary_blue-100 via-primary_blue-100/80 to-black/10 px-5 py-10 mt-14 rounded-3xl flex flex-col w-full">
+      <div className="min-h-[60vh] bg-gradient-to-r from-primary_blue-100 via-primary_blue-100/80 to-black/10 px-5 py-10 mt-14 rounded-3xl flex flex-col w-full">
         <div className="max-w-4xl p-10 flex flex-col my-auto">
           <svg
             xmlns="http://www.w3.org/2000/svg"

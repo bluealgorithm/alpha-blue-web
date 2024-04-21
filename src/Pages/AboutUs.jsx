@@ -1,21 +1,18 @@
 import React from "react";
 import Nav from "../Components/Nav";
-import Header from "../Components/Header";
-import About from "../Components/About";
-import Mission_Vision from "../Components/WhoWeAre";
 import Difference from "../Components/Difference";
 import Partners from "../Components/Partners";
 import Contact from "../Components/Contact";
-import vision from "../asset/images/vision.png";
 import mision_bnr from "../asset/images/mision_bnr.png";
 import kcca from "../asset/images/difference_kcca.png";
 import scaleup from "../asset/images/scaleup.png";
 import state from "../asset/images/state.png";
 import FadeIn from "../Components/Animation/FadeIn";
 import FadeLeft from "../Components/Animation/FadeLeft";
-import FadeDown from "../Components/Animation/FadeDown";
 import FadeUp from "../Components/Animation/FadeUp";
 import WhoWeAre from "../Components/WhoWeAre";
+import PageHeader from "../Components/PageHeader";
+import coverImage from "../asset/images/alpha-blue.jpeg";
 
 const AboutUs = () => {
   return (
@@ -24,7 +21,11 @@ const AboutUs = () => {
         <Nav />
       </FadeLeft>
 
-      <Header />
+      <PageHeader
+        coverImage={coverImage}
+        title="Alpha Blue Foundation"
+        tagline="Innovation for Sustainable Growth in Africa"
+      />
 
       <FadeLeft>
         <WhoWeAre
