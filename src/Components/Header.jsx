@@ -67,7 +67,7 @@ const Header = () => {
               backgroundPosition: slide.position ? "center" : "top",
               backgroundRepeat: "no-repeat",
             }}
-            className={`flex relative items-center justify-center w-[calc(100vw-120px)] px-5 mx-auto rounded-xl mb-5 mt-1 min-h-[calc(100vh-80px)] text-white text-center`}
+            className={`flex relative items-center justify-center w-[calc(100vw-24px)] md:w-[calc(100vw-120px)] px-5 mx-auto rounded-xl mb-5 mt-1 min-h-[calc(100vh-80px)] text-white text-center`}
           >
             <button
               onClick={() => swiperRef.current.swiper.slidePrev()}

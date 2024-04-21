@@ -64,7 +64,7 @@ const Partners = () => {
         </div>
       </div> */}
       <marquee behavior="scroll" direction="left" scrollamount="5">
-        <div className="flex flex-wrap space-x-14 mx-auto py-12">
+        <div className="flex space-x-14 mx-auto py-12">
           {partners.map((partner) => (
             <img
               src={partner.logo}

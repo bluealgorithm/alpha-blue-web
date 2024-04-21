@@ -21,7 +21,7 @@ const WhoWeAre = () => {
   ];
 
   return (
-    <div className="mt-12 py-10 px-8 flex flex-col justify-center items-center mx-auto bg-gradient-to-r from-primary_blue-200 to-primary_blue-100">
+    <div className="mt-12 py-14 px-8 flex flex-col justify-center items-center mx-auto bg-gradient-to-r from-primary_blue-200 to-primary_blue-100">
       <div className="max-w-5xl">
         <div className="space-y-8">
           <p className="text-xl font-medium text-white leading-normal">
@@ -41,7 +41,7 @@ const WhoWeAre = () => {
           </p>
         </div>
 
-        <section className="flex flex-wrap mt-8 rounded-2xl bg-black/20">
+        <section className="flex flex-wrap mt-10 rounded-2xl bg-black/20">
           {programStats.map((stat) => (
             <div className="w-3/12 flex flex-col">
               <div className="p-6 mx-auto text-center">

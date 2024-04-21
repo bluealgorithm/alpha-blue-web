@@ -1,17 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Nav from "../Components/Nav";
 import Header from "../Components/Header";
-import About from "../Components/About";
-// import Mission_Vision from "../Components/Mission_Vision";
-import Difference from "../Components/Difference";
-import Partners from "../Components/Partners";
+// import About from "../Components/About";
+// import Partners from "../Components/Partners";
 import Contact from "../Components/Contact";
-import vision from "../asset/images/vision.png";
-import mision_bnr from "../asset/images/mision_bnr.png";
-import kcca from "../asset/images/difference_kcca.png";
-import scaleup from "../asset/images/scaleup.png";
-import state from "../asset/images/state.png";
-import FadeIn from "../Components/Animation/FadeIn";
 import FadeLeft from "../Components/Animation/FadeLeft";
 
 const GetInvolved = () => {
@@ -27,7 +19,7 @@ const GetInvolved = () => {
         btn_txt="Contact Us"
         link="get-in-touch"
       />
-      <FadeIn>
+      {/* <FadeIn>
         <Difference
           title="HOW TO GET INVOLVED"
           text1="Become a partner"
@@ -37,7 +29,7 @@ const GetInvolved = () => {
           img2={scaleup}
           img3={state}
         />
-      </FadeIn>
+      </FadeIn> */}
       <FadeLeft>
         <Contact />
       </FadeLeft>

@@ -1,9 +1,9 @@
 import React from "react";
-import { Paper, Button } from "@mui/material";
+
 const Item = ({ item, galery }) => {
   return (
     <>
-      <Paper
+      {/* <Paper
         className={`${
           galery ? "h-[370px]" : " md:h-[672px]"
         } w-5/6 mx-auto sm:w-4/6 md:mx-0 md:w-[400px] rounded-br-3xl border `}
@@ -23,7 +23,7 @@ const Item = ({ item, galery }) => {
         <p className="font-[400] text-[18px] md:text-[24px] mx-[15px] md:mx-[23px]">
           {!galery && item.testimony}
         </p>
-      </Paper>
+      </Paper> */}
     </>
   );
 };
