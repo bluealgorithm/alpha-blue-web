@@ -52,7 +52,7 @@ const Contact = () => {
   return (
     <>
       <section className="h-auto bg-primary_blue-100 overflow-hidden">
-        <div className="contact h-full block md:flex mt-[56px] md:relative">
+        <div className="contact h-full md:h-[1260px] block md:flex mt-[56px] md:relative">
           <FadeIn delay={1000}>
             <img
               src={contact_brn}

@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom";
+import facebook from "../asset/images/facebook.png";
+import twitter from "../asset/images/twitter.png";
+import linkedin from "../asset/images/linkedin.png";
+
 export default function Footer() {
   return (
-    <footer>
+    <footer className="bg-primary_blue-100">
       <div className="pt-[56px] px-[20px] md:px-[80px] text-white text-center md:text-left">
         <div className="block md:flex md:justify-between">
           <div className="info md:max-w-[455px] mb-[15px] md:mb-0 mt-[56px]">
@@ -54,21 +59,44 @@ export default function Footer() {
               >
                 <Link to="/get-in-touch">Contact Us</Link>
               </li>
+            </ul>
+          </div>
+          <div className="link mt-[56px] flex flex-col">
+            <h4 className="mb-[8px] font-[600] text-[24px]">Follow us</h4>
+            <ul className="flex space-x-8 mx-auto">
               <li
                 className="font-[400] text-[16px] mb-[8px]"
                 style={{ lineHeight: "24px" }}
               >
-                <Link to="#">Donate</Link>
+                <Link to="/about-us">
+                  <img src={linkedin} />
+                </Link>
+              </li>
+              <li
+                className="font-[400] text-[16px] mb-[8px]"
+                style={{ lineHeight: "24px" }}
+              >
+                <Link to="/about-us">
+                  <img src={facebook} />
+                </Link>
+              </li>
+              <li
+                className="font-[400] text-[16px] mb-[8px]"
+                style={{ lineHeight: "24px" }}
+              >
+                <Link to="/about-us">
+                  <img src={twitter} />
+                </Link>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div className="w-full" style={{ border: "0.2px solid #7D7B7B" }}></div>
+      <div className="w-full border mt-8 border-white/10" />
       <div className="copy md:h-[80px] bg-primary_blue-100 px-[15px] md:px-[80px] py-[10px] border-white text-center text-white">
         <p className="font-[400] text-[16px] mt-[16px]">
-          Copyright ©2022 All rights reserved | Alpha Blue Foundation Powered by
-          Blue Algorithm Technologies Ltd
+          Copyright &copy; {new Date().getFullYear()} All rights reserved |
+          Alpha Blue Foundation Powered by Blue Algorithm Technologies Ltd
         </p>
       </div>
     </footer>

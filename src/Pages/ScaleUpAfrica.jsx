@@ -1,25 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "../Components/Header";
 import Nav from "../Components/Nav";
-// import Slider from "../Components/Slider";
+import coverImage from "../asset/images/scale-up.jpg";
 import Contact from "../Components/Contact";
 import Partners from "../Components/Partners";
+import PageHeader from "../Components/PageHeader";
+import Footer from "../Components/Footer";
 
 const ScaleUpAfrica = () => {
   return (
     <>
       <Nav />
-      <Header
-        title="SCALE UP AFRICA PROJECT "
-        content="PPromoting sustainable human capital development in Africa through technology"
-        btn_txt="Contact Us"
-        link="get-in-touch"
-        about
+      <PageHeader
+        title="Scale Up Africa"
+        tagline="Empowering African Youths For Technology Careers And Entrepreneurship"
+        coverImage={coverImage}
       />
       <section className="md:h-[408px] px-[20px] md:px-[80px] py-[56px] bg-white text-black">
         <h1 className="text-[20px] md:text-[40px] font-[600] leading-10 mb-[24px]">
-          ABOUT SCALE UP AFRICA
+          About Scale Up Africa
         </h1>
         <p className="mb-[16px]">
           Scale Up Africa is an initiative to empower Africans with digital tech
@@ -80,24 +79,22 @@ const ScaleUpAfrica = () => {
             certification.
           </li>
         </ul>
-        <Link to="#" className="mt-[24px]">
-          Visit KCCA WEBSITE{" "}
-        </Link>
       </section>
-      <section className="pb-[30px] md:pb-[80px]">
+      {/* <section className="pb-[30px] md:pb-[80px]">
         <h1 className="text-center md:text-left md:ml-[70px] font-[600] text-[20px] md:text-[40px] mt-[20px] md:mt-[56px] mb-[26px]">
           SCALE UP AFRICA TESTIMONIALS
-        </h1>
-        {/* <Slider /> */}
-      </section>
-      <section className=" pb-[20px] md:pb-[80px]">
-        <h1 className="text-center md:text-left md:ml-[70px] font-[600] text-[20px] md:text-[40px] mb-[26px]">
+        </h1> */}
+      {/* <Slider /> */}
+      {/* </section> */}
+      {/* <section className=" pb-[20px] md:pb-[80px]"> */}
+      {/* <h1 className="text-center md:text-left md:ml-[70px] font-[600] text-[20px] md:text-[40px] mb-[26px]">
           SCALE UP AFRICA GALLERY
-        </h1>
-        {/* <Slider gallery /> */}
-      </section>
+        </h1> */}
+      {/* <Slider gallery /> */}
+      {/* </section> */}
       <Partners />
       <Contact />
+      <Footer />
     </>
   );
 };

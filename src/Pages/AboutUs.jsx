@@ -3,9 +3,6 @@ import Nav from "../Components/Nav";
 import Partners from "../Components/Partners";
 import Contact from "../Components/Contact";
 import mision_bnr from "../asset/images/mision_bnr.png";
-import kcca from "../asset/images/difference_kcca.png";
-import scaleup from "../asset/images/scaleup.png";
-import state from "../asset/images/state.png";
 import FadeIn from "../Components/Animation/FadeIn";
 import FadeLeft from "../Components/Animation/FadeLeft";
 import FadeUp from "../Components/Animation/FadeUp";
@@ -14,6 +11,8 @@ import PageHeader from "../Components/PageHeader";
 import coverImage from "../asset/images/alpha-blue.jpeg";
 import CoreValues from "../Components/CoreValues";
 import WhatWeDo from "../Components/WhatWeDo";
+import OurTeam from "../Components/OurTeam";
+import Footer from "../Components/Footer";
 
 const AboutUs = () => {
   return (
@@ -38,12 +37,14 @@ const AboutUs = () => {
       </FadeLeft>
       <CoreValues />
       <WhatWeDo />
+      <OurTeam />
       <FadeIn>
         <Partners btn="Become A Partner" />
       </FadeIn>
       <FadeUp>
         <Contact />
       </FadeUp>
+      <Footer />
     </div>
   );
 };

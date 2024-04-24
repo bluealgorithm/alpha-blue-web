@@ -31,7 +31,7 @@ export default function WhatWeDo() {
       <div className="flex flex-wrap mt-3 rounded-xl py-10 px-4">
         {items.map((item) => (
           <div className="w-full mx-auto md:w-1/2 lg:w-1/3 px-8 py-6">
-            <p className="flex items-center text-primary_blue-100 justify-center mb-4 h-14 w-14 rounded-full bg-slate-200">
+            <p className="flex items-center bg-primary_blue-200/30 justify-center mb-4 h-14 w-14 rounded-full">
               {item.icon}
             </p>
             <h3 className="text-lg font-semibold text-white">{item.title}</h3>
